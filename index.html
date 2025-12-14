@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Escape Room Multiverse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <button id="muteBtn" class="music-btn">🔊 Music Off</button>
+
+  <main class="game">
+
+    <header class="game-header">
+      <h1 class="neon-title">✨ Escape Room Multiverse ✨</h1>
+
+      <div class="meta">
+        <div id="score">Score: 0</div>
+        <div id="level">Level: Bronze</div>
+        <div id="timer">01:00</div>
+      </div>
+    </header>
+
+    <section class="card neon-card">
+      <div id="questionLabel" class="question"></div>
+
+      <div id="hint" class="hint-box"></div>
+
+      <form id="answerForm">
+        <input id="answerInput" type="text" placeholder="Write your answer..." />
+        <button type="submit" class="btn neon-btn">Submit</button>
+      </form>
+
+      <button id="hintBtn" class="btn ghost-btn" hidden>Hint</button>
+      <button id="helpBtn" class="btn ghost-btn" hidden>Show Answer</button>
+
+      <div id="feedback" class="feedback"></div>
+
+      <div class="controls">
+        <button id="startBtn" class="btn start-btn">Start Game</button>
+        <button id="nextBtn" class="btn neon-btn" hidden>Next</button>
+      </div>
+
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+    </section>
+
+    <footer>
+      <small>3 levels • 10 questions • 60 sec each</small>
+      <div id="final" hidden></div>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
